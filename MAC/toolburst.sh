@@ -45,3 +45,6 @@ chsh -s $(which zsh)
 ## https://github.com/mbrubeck/compleat
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+## fastlane 安装结束之后 将 fastlane/bin 添加到 ～/.zshrc
+brew cask install fastlane
+
