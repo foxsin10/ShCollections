@@ -47,8 +47,12 @@ xcodebuild \
 startPack() {
 
 read -p "start exporting ipa, select version: d/r? "
-
 param=$REPLY
+
+## or comment text above, uncomment the next line
+## param=$1
+
+
 filepath=$(cd "$(dirname "$0")"; pwd)
 archivePath="$(pwd)/xxx.xcarchive"
 exportOptionsPlistPath="$(pwd)/xxx.plist" ## export.plist
